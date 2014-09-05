@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>P2Pool - Wykresy</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <script type="text/javascript" src="d3.v2.min.js"></script>
+	    <link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/jquery.jqplot.min.css" rel="stylesheet">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+		<script class="include" language="javascript" type="text/javascript" src="js/jqplot.pieRenderer.min.js"></script>
+	    <style>
+			body {
+				padding-top: 60px;
+			}
+			line {
+                stroke: black;
+                stroke-width: 1;
+                shape-rendering: crispEdges;
+            }
+            
+            .plotline {
+                stroke-width: 1.4;
+                fill: none;
+            }
+            
+            text {
+                font-family: Sans-serif;
+                font-size: 12px;
+            }
+						li > ul {
+                display:none;
+            }
+            li:hover > ul {
+                display:block;
+           }
+	    </style>
+	    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+		
+		<script>
+			function ChangeCurrentPeriod(p_Period, p_Sender)
+			{
+				period=p_Period;
+				$('#scale_menu li').removeClass('active');
+				$('#' + p_Sender).addClass('active');
+				document.location.href =  "?" + period;
+			}
+        </script>
+    </head>
+    
+    <body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="navbar-inner">
+			<div class="container">
+			  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="brand" href="/">THash (<span class="symbol upper"></span>) node</a>
+			  <div class="nav-collapse collapse">
+				<ul class="nav">
+			  <li><a href="index_du.html">Statistik</a></li>
+			  <li><a href="graphs_du.html">Charts</a></li>
+              <li><a href="kontakt_du.html">Kontakte</a></li>
+              <li class="active"><a href="instrukcja_du.html">Für Anfänger</a></li>
+			  
+			  
+			  	<li><a href="#">Language</a>
+      <ul>
+        <li><a href="index.html">Polski</a></li>
+        <li><a href="index_en.html">English</a></li>
+		<li><a href="index_du.html">Deutsch</a></li>	
+		<li><a href="index_ru.html">Pусский</a></li>
+      </ul>
+				</ul>
+			  </div><!--/.nav-collapse -->
+			</div>
+		  </div>
+		</div>
+		<div>
+Graben mit pool </br> </br> 
+
+Wir wählen die entsprechende Version cgminera / bfgminera / guiminera (für die manuelle wir cgminera verwenden) </br> 
+Wenn Sie eine fertige Gräber des Moduls und gebaut cgminerem gehen Sie auf die Extra * </br> </br> 
+
+1 Je nachdem, ob Sie einen Hardware-CPU haben, GPU, FPGA, ASIC Hier wählen wir diese Software: </br> </br> 
+
+CPU, GPU, FPGA - auf Version 3.7.2 cgminera (später in Sparta für die GPU eingestellt, CPU) gefördert </br> 
+Github: https://github.com/Kalroth/cgminer-3.7.2-kalroth </br> 
+Fertig: http://k-dev.net/cgminer/ </br> </br> 
+
+ASIC - Unterstützung der neuesten cgminerami </br> 
+Github: https://github.com/ckolivas/cgminer </br> 
+Fertig: http://ck.kolivas.org/apps/cgminer/ </br> </br> 
+
+2 Die entsprechende Software, je nachdem, was wir haben Bagger: </br> </br> 
+
+Prozessor </ br> 
+Prozessor-Treiber, Pflichtregelung mit Open CL </br> </br> 
+
+Radeon / NVidia-Karten </br> 
+, Laden Sie die entsprechenden Treiber von der Hersteller Websites, Pflichtregelung mit Open CL </br> 
+Radeon - http://support.amd.com/en-us/download </br> 
+NVidia - http://www.nvidia.pl/Download/index.aspx?lang=pl </br> </br> 
+
+FPGA 
+Engagierte Fahrer abhängig von der Art des FPGA, in der Regel der Hersteller-Website: </br> 
+ZTEX - http://www.ztex.de/downloads/#firmware_kit </br> </br> 
+
+ASIC 
+Um cgminera in den meisten Fällen verwenden wir benötigen Treiber WinUSB </br> 
+Wir können es von dieser Seite herunterladen :  Http://zadig.akeo.ie/ </br> </br> 
+
+3 Nun wollen einen Bagger poolu wir brauchen, um eine ausführbare Batch erstellen ausführen. </Br> 
+Ich werde Schritt für Schritt erklären, wie es geht: </br> 
+-Notebook geöffnet </br> 
+-paste, dass dies der Befehl ""cgminer -o api.thash.pl:9332 -u IhreBtcadresse -p xxx " " </br> 
+-Zeitersparnisse Datei als start.bat in folderzez von cgminerem </br> 
+(Denken Sie daran, Dateityp auswählen: alle Dateien) </br> 
+</br> </br> 
+<B> Anleitung Besitz thash.pl, kopieren nur mit Zustimmung der Verwaltung. </B>
+
+		</div>
+        <center>
+    </body>
+</html>
